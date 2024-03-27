@@ -22,7 +22,7 @@ jobs:
       run: dotnet restore
       
     - name: Install NuGet package
-      run: dotnet add ./pract14/pract14.csproj package Microsoft.CodeAnalysis.FxCopAnalyzers --version 3.3.2
+      run: dotnet add C:/Users/PCUSER/source/repos/pract14/pract14.csproj package Microsoft.CodeAnalysis.FxCopAnalyzers --version 3.3.2
       
     - name: Run Roslyn Analyzers
-      run: dotnet build ./pract14/pract14.csproj /p:WarningLevel=6 /p:DebugType=None /p:DebugSymbols=false /p:Platform="Any CPU" /p:TreatWarningsAsErrors=true
+      run: dotnet build C:/Users/PCUSER/source/repos/pract14/pract14.csproj /p:WarningLevel=6 /p:DebugType=None /p:DebugSymbols=false /p:Platform="Any CPU" /p:TreatWarningsAsErrors=true
